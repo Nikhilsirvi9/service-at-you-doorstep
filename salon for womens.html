@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Salon</title>
+    <link rel="stylesheet" href="salon for womens.css">
+</head>
+<body>
+    <header>
+        <h1>Women's Salon</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Welcome to Women's Salon</h2>
+        <p>Experience the ultimate beauty care tailored for you.</p>
+        <a href="#services" class="btn">Explore Our Services</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <form id="service-form" action="book_service.php" method="post">
+            <label for="service">Select a Service:</label>
+            <select id="service" name="service">
+                <option value="Hair Styling">Hair Styling</option>
+                <option value="Manicure & Pedicure">Manicure & Pedicure</option>
+                <option value="Facial Treatments">Facial Treatments</option>
+            </select>
+            <button type="submit">Book Service</button>
+        </form>
+    </section>
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="team-member1.jpg" alt="Team Member 1">
+            <h3>Stylist Name</h3>
+            <p>Lead Stylist</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member2.jpg" alt="Team Member 2">
+            <h3>Esthetician Name</h3>
+            <p>Skin Care Specialist</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Women's Salon. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

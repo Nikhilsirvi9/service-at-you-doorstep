@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <h1>Professional Registration</h1>
+    </header>
+    <main>
+        <form id="registration-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="profession">Profession:</label><br>
+            <input type="text" id="profession" name="profession" required><br>
+            <label for="experience">Years of Experience:</label><br>
+            <input type="number" id="experience" name="experience" required><br>
+            <label for="skills">Skills:</label><br>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br>
+            <button type="submit">Register</button>
+        </form>
+        <div id="custom-alert" class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            Form submitted successfully!
+        </div>    
+    </main>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    
+    <script src="register.js"></script> 
+</body>
+</html>
